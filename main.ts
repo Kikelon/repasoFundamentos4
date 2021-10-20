@@ -1,4 +1,5 @@
 import { Punto } from "./Punto";
+import { Trinagulo } from "./Triangulo";
 
 let punto1 = new Punto(2,6);
 let punto2 = new Punto(-7,3);
@@ -34,3 +35,6 @@ console.log("Origen está en el cuadrante ",origen.calcularCuadrante());
 
 console.log(origen.calcularMasCercano(arrayPuntos));
 
+let triangulo = new Trinagulo(punto1, punto2, punto3);
+
+console.log("Longitud de los lados del triángulo: ", triangulo.calcularLongitudLados())
